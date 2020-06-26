@@ -144,7 +144,7 @@ a{
 }
 .back-to-top-link {
     position: fixed;
-    position: -webkit-sticky;
+    /* position: -webkit-sticky; */
    /*position: sticky;*/ 
     pointer-events: all;
     top: calc(100vh - 5rem);
