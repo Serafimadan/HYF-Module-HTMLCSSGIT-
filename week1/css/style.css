@@ -1,0 +1,264 @@
+html {
+
+}
+body{
+    background-color: #f7f8f9;
+    color: #0e1821;
+    font-family: 'Lato', sans-serif;
+}
+h1, h2, h4 {
+    font-family: 'Lato', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #0e1821;
+}
+/* header styles */
+.header {
+    padding: 20px 0 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: 0 0 9px #798f8cb0;
+}
+.container{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.row-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+}
+.main-menu ul li a {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.66;
+}
+.main-menu ul li a:hover {
+    border-bottom: 2px solid #5d80b6;
+   color: #101e5a;
+}
+.logo{
+    display: flex;
+}
+.logo h1{
+    font-weight: 800;
+    font-size: 30px;
+}
+.logo p{
+    margin-top: 14px;
+}
+.element-logo{
+    margin-right: 10px;
+    color: #101e5a;
+}
+/* main information block*/
+.main-information-block{
+    display: flex;
+    margin-top: 50px;
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 50px;
+}
+.personal-information img{
+    border-radius: 50%;
+    display: block;
+    max-width: 100%;
+    box-shadow: 0 0 10px #acbdd3;
+}
+.span-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.66;
+}
+.span-title + span {
+    display: block;
+    padding-left: 90px;
+    color: #101e5a;
+}
+.about-me-info p {
+    margin-bottom: 15px;
+    display: flex;
+}
+.mdi{
+    font-size: 20px;
+    padding-right: 10px;
+    color: #101e5a;
+}
+.text-about{
+    margin-left: 80px;
+}
+.text-about h2, .main-section h2, .my-portfolio h2, .my-education h2, .my-contact h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #5d80b6;
+}
+.about-btns{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+.site-btn {
+    min-width: 170px;
+    text-align: center;
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+}
+.site-btn {
+    background: #101e5a;
+    color: #ffffff;
+}
+.about-btns .site-btn {
+    margin-right: 30px;
+}
+.site-btn.gray-btn {
+    background: #efefef;
+    color: #0e1821;
+}
+.site-btn.gray-btn:hover {
+    -webkit-box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
+    box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
+    color: #252525;
+}
+.site-btn:hover {
+    -webkit-box-shadow: 10px 10px 20px rgba(51, 51, 255, 0.2);
+    box-shadow: 10px 10px 20px rgba(51, 51, 255, 0.2);
+}
+/* block skills*/
+.my-skills{
+    position: relative;
+    padding-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 50px;
+}
+.grid-item{
+    position: relative;
+    color: #222;
+    box-shadow: 0 0 1px #cbc6c3;
+    padding: 45px 51px 42px 45px;
+}
+.advantages-box h4, .about-row h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.opacity-box p{
+    color: #101e5a;
+}
+.my-education, .my-portfolio, .my-contact{
+    padding-top: 50px;
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 50px;
+}
+
+.my-education ul> li{
+    margin-bottom: 20px;
+}
+.my-education ul {
+    list-style: outside;
+}
+/* block portfolio*/
+.portfolio-box .portfolio-img img {
+    margin: 0;
+    width: 60%;
+    height: auto;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.row-portfolio {
+    display: flex;
+}
+.portfolio-box {
+    display: block;
+    margin: 0 auto 30px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+.portfolio-box .portfolio-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.55;
+}
+.portfolio-box .portfolio-img {
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+/*block contact*/
+.my-contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+.input_head{
+    max-width: 600px;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #cbc6c3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: #6A767D;
+    -webkit-appearance: none;
+}
+.text-message {
+    max-width: 600px;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #cbc6c3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    line-height: 42px;
+    color: #6A767D;
+    -webkit-appearance: none;
+}
+.button{
+    font-size: 14px;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+footer {
+    box-shadow: 0 0 9px #798f8cb0;
+    padding: 20px 0 20px;
+    background-color: #ffffff;
+}
+.copyright p{
+    text-align: center;
+}

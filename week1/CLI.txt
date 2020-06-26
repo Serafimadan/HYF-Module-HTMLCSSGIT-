@@ -1,0 +1,23 @@
+QUESTIONS
+
+1. How do I create a hidden file or folder? How do I display it in the CLI?
+2. How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+3. How do I append a message to a file, without a newline character, so the output would be:
+first message
+second message
+
+ANSWERS
+
+1.  Hiding files and directories is very simple.
+    All I have to do is write a dot at the beginning of the name of the file/directory.
+	To create a hidden file -  "touch .fileName".
+	To create  a hidden folder - "touch .folderName".
+	To view hidden files and directories in a terminal, I use ls -a.
+
+2.  The mkdir accepts multiple path arguments, so I will use next command -
+    "mkdir -p /c/Users/myusername/these/folders/are/just/for/fun".
+    The -p flag will create the required intermediate directories on the path.
+
+3. In this case I add the text to file using the echo command, then by default this text will be transferred
+   to a new line at the end of the file. >> always includes a trailing newline (except for an empty document).
+   "echo 'any text' >> fileName"
