@@ -1,6 +1,3 @@
-html {
-
-}
 body{
     background-color: #f7f8f9;
     color: #0e1821;
@@ -136,6 +133,36 @@ a{
 .site-btn:hover {
     -webkit-box-shadow: 10px 10px 20px rgba(51, 51, 255, 0.2);
     box-shadow: 10px 10px 20px rgba(51, 51, 255, 0.2);
+}
+.back-to-top-wrapper {
+    position: absolute;
+    top: 100vh;
+    right: 0.25rem;
+    bottom: -5em;
+    width: 3em;
+    pointer-events: none;
+}
+.back-to-top-link {
+    position: fixed;
+    position: -webkit-sticky;
+   /*position: sticky;*/ 
+    pointer-events: all;
+    top: calc(100vh - 5rem);
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    padding: 0.25rem;
+    border: 1px solid #254568;
+    background-color: #d6e3f0;
+    -webkit-transition: -webkit-transform 80ms ease-in;
+    transition: -webkit-transform 80ms ease-in;
+    transition: transform 80ms ease-in;
+    transition: transform 80ms ease-in, -webkit-transform 80ms ease-in;
 }
 /* block skills*/
 .my-skills{
