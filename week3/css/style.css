@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 body {
     color: #00112c;
@@ -83,7 +83,7 @@ p {
     position: relative;
 }
 .main-navigation_list>li, .navbar-nav>li, .menu-mobyle{
-    margin-top: 1.5625rem;
+    margin-top: 1.3625rem;
     cursor: pointer;
 }
 .main-navigation_list>li{
@@ -161,7 +161,7 @@ p {
 .nav_link{
     border-top: 4px solid transparent;
     color: #00112c;
-    padding-top: 24px;
+    padding-top: 20px;
 }
 .nav_link:hover{
     border-color: #0abf53;
@@ -251,6 +251,7 @@ h1+p, h2+p {
 .bench-pic{
     height: 100%;
 }
+
 /* block with logo */
 .logo_area{
     background-color: #fff;
@@ -260,6 +261,9 @@ h1+p, h2+p {
 }
 .inner_container-logo >li{
     padding-top: 12px;
+}
+img.partners_image {
+    max-width: 100%;
 }
 /* content blok */
 .payment_methods{
@@ -290,6 +294,10 @@ h1+p, h2+p {
 }
 .payment-pic{
     margin-left: 30px;
+}
+/* block more information */
+.read-more-area-item-image{
+    
 }
 /* footer */
 footer.area-dark {
@@ -367,6 +375,11 @@ footer .footer-link:hover {
 .footer_market-form{
 padding-bottom: 20px;
 }
+h2.footer_market-form--newsletter-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
 /* media */
 @media (max-width: 1248px){
     .screen_image {
@@ -393,17 +406,10 @@ padding-bottom: 20px;
         margin-left: 0;
         order: 0;
     }
-    .bench-pic {
-    margin-left: -4%;
-    margin-right: -3%;
-    }
+
     .inner_container, .area-inner {
         margin-right: 3%;
         margin-left: 3%;
-    }
-    .inner_container {
-        flex-wrap: wrap;
-     
     }
     .inner-container_text {
       padding-top: 0;
@@ -414,7 +420,7 @@ padding-bottom: 20px;
     padding-left: 0;
     padding-right: 0;
     }
-    .top-footer{
+    .top-footer, .inner-container_text-payment, .inner_container{
         flex-wrap: wrap;
     }
     footer .footer_link_list-row {
@@ -434,6 +440,7 @@ padding-bottom: 20px;
     }
     .screen_images-mobyle{
         display: block;
+        min-width: 100%;
     }
     .text-left, .column_description {
         flex: 0 0 100%;
@@ -445,10 +452,15 @@ padding-bottom: 20px;
     .column_description {
      padding-right: 0; 
     }
-    .inner-container_text-payment {
-        flex-wrap: wrap;
-    }
     .inner_container_paiment {
         margin-top: 0;
+    }
+    .btn-row-bench{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .column_description {
+        margin-bottom: 0;
     }
 }
