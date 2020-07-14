@@ -57,12 +57,14 @@ ul#grid-flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 ul#grid-floats {
     overflow: hidden;
 }
 ul#grid-floats, ul#grid-flex {
     list-style-type: none;
+    padding-inline-start: 0;
 }
 ul#grid-floats li, ul#grid-flex li{
     border: 2px solid #FF7F50;
@@ -123,7 +125,7 @@ ul#grid-floats li {
         width: 46%;
     }
     #grid-flex li:nth-child(-n + 2) {
-        width: 48%;
+        width: 46%;
     }
     #grid-floats .grid-item {
         width: 30%;

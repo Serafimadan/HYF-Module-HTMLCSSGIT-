@@ -295,9 +295,32 @@ img.partners_image {
 .payment-pic{
     margin-left: 30px;
 }
+.inner_container-payment-method{
+    margin: 0 auto;
+    margin-left: 4%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 /* block more information */
-.read-more-area-item-image{
-    
+.read-more-area-title {
+    padding-top: 0;
+    padding-bottom: 12px;
+}
+.read-more-area-item--large {
+    float: left;
+    padding-right: 24px;
+    width: 58.333333%;
+}
+.read-more-area-item--small {
+    float: right;
+    padding-left: 24px;
+    width: 41.666667%;
+}
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
 }
 /* footer */
 footer.area-dark {
@@ -308,7 +331,7 @@ footer .footer-inner {
     padding-top: 48px;
     padding-bottom: 0;
 }
-footer .footer-link:visited {
+footer .footer-link {
     color: #fff;
 }
 .top-footer{
