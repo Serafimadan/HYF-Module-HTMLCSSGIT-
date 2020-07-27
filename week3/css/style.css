@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-
+*, *::before, *::after {
+    box-sizing: border-box;
+} 
 body {
     color: #00112c;
     font-family: 'Open Sans', sans-serif;
@@ -280,11 +282,11 @@ img.partners_image {
     margin-top: -12rem;
     padding-right: 70px;
 }
-.text-left p a{
+.text-left p a, span.link{
     color: #0abf53;
     text-decoration: underline;
 }
-.text-left p a:hover{
+.text-left p a:hover,  span.link:hover{
     color: #0abf53;
     text-decoration: none;
 }
@@ -321,6 +323,61 @@ img.partners_image {
     display: block;
     clear: both;
     content: "";
+}
+.read-more-area .read-more-area-item .read-more-area-item-link {
+    display: block;
+    text-decoration: none;
+}
+.inner_container-read-more{
+        margin-left: 4%;
+        margin-right: 4%;
+}
+.read-more-area-item {
+    margin-bottom: 48px;
+}
+span.item-image-first {
+    background-image: url(../images/bonobos-store.jpg);
+}
+span.item-image-second{
+    background-image: url(../images/read-more-spotify-image.jpg);
+}
+span.item-image-third{
+    background-image: url(../images/blog-header-bijenkorf.jpg);
+}
+.read-more-area .read-more-area-item.read-more-area-item--small .read-more-area-item-image {
+    height: 260px;
+}
+
+.read-more-area .read-more-area-item.read-more-area-item--large .read-more-area-item-image {
+    height: 660px;
+    width: auto;
+}
+.read-more-area .read-more-area-item .read-more-area-item-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: relative;
+}
+.read-more-area-item-logo {
+    bottom: 24px;
+    left: 24px;
+    position: absolute;
+}
+img.read-more-area-item-logo.item-logo-bonobos{
+    height: 20px;
+}
+.read-more-area-item-image+h3 {
+    padding-top: 24px;
+}
+.font-weight-bold {
+    letter-spacing: -0.015em;
+    font-size: 24px;
+}
+.read-more-area-item--large .read-more-area-item-image:before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 /* footer */
 footer.area-dark {
@@ -485,5 +542,19 @@ h2.footer_market-form--newsletter-title {
     }
     .column_description {
         margin-bottom: 0;
+    }
+    .read-more-area .read-more-area-item.read-more-area-item--small {
+        float: none;
+        padding-left: 0;
+        width: 100%;
+    }
+    .read-more-area .read-more-area-item.read-more-area-item--large {
+        float: none;
+        padding-right: 0;
+        width: 100%;
+    }
+    .read-more-area-item--large .read-more-area-item-image {
+        height: auto;
+        width: 100%;
     }
 }

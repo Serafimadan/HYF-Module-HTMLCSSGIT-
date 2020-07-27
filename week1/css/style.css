@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #f7f8f9;
     color: #0e1821;
     font-family: 'Lato', sans-serif;
@@ -6,33 +6,31 @@ body{
 h1, h2, h4 {
     font-family: 'Lato', sans-serif;
 }
-a{
+a {
     text-decoration: none;
     color: #0e1821;
 }
 /* header styles */
 .header {
     padding: 20px 0 20px;
-    top: 0;
     left: 0;
     width: 100%;
-    background: #fff;
+    background: #ffffff;
     z-index: 1000;
     box-shadow: 0 0 9px #798f8cb0;
 }
-.container{
+.container {
     margin-left: 7%;
     margin-right: 7%;
 }
-.row-container{
+.row-container {
     display: flex;
     justify-content: space-between;
 }
 
 .list-inline>li {
     display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 5px 5px 0 ;
     margin-top: 10px;
 }
 .main-menu ul li a {
@@ -45,28 +43,28 @@ a{
     border-bottom: 2px solid #5d80b6;
    color: #101e5a;
 }
-.logo{
+.logo {
     display: flex;
 }
-.logo h1{
+.logo h1 {
     font-weight: 800;
     font-size: 30px;
 }
-.logo p{
+.logo p {
     margin-top: 14px;
 }
-.element-logo{
+.element-logo {
     margin-right: 10px;
     color: #101e5a;
 }
 /* main information block*/
-.main-information-block{
+.main-information-block {
     display: flex;
     margin-top: 50px;
     border-bottom: 1px solid #e3e3e3;
     padding-bottom: 50px;
 }
-.personal-information img{
+.personal-information img {
     border-radius: 50%;
     display: block;
     max-width: 100%;
@@ -87,20 +85,20 @@ a{
     margin-bottom: 15px;
     display: flex;
 }
-.mdi{
+.mdi {
     font-size: 20px;
     padding-right: 10px;
     color: #101e5a;
 }
-.text-about{
+.text-about {
     margin-left: 80px;
 }
-.text-about h2, .main-section h2, .my-portfolio h2, .my-education h2, .my-contact h2{
+.text-about h2, .main-section h2, .my-portfolio h2, .my-education h2, .my-contact h2 {
     font-size: 25px;
     margin-bottom: 20px;
     border-bottom: 2px solid #5d80b6;
 }
-.about-btns{
+.about-btns {
     display: flex;
     margin-top: 30px;
     justify-content: center;
@@ -144,8 +142,6 @@ a{
 }
 .back-to-top-link {
     position: fixed;
-    /* position: -webkit-sticky; */
-   /*position: sticky;*/ 
     pointer-events: all;
     top: calc(100vh - 5rem);
     display: inline-block;
@@ -165,9 +161,8 @@ a{
     transition: transform 80ms ease-in, -webkit-transform 80ms ease-in;
 }
 /* block skills*/
-.my-skills{
+.my-skills {
     position: relative;
-    padding-top: 50px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -175,9 +170,9 @@ a{
     justify-items: stretch;
     align-items: stretch;
     border-bottom: 1px solid #e3e3e3;
-    padding-bottom: 50px;
+    padding: 50px 0 50px;
 }
-.grid-item{
+.grid-item {
     position: relative;
     color: #222;
     box-shadow: 0 0 1px #cbc6c3;
@@ -187,16 +182,16 @@ a{
     margin-bottom: 10px;
     font-size: 18px;
 }
-.opacity-box p{
+.opacity-box p {
     color: #101e5a;
 }
-.my-education, .my-portfolio, .my-contact{
+.my-education, .my-portfolio, .my-contact {
     padding-top: 50px;
     border-bottom: 1px solid #e3e3e3;
     padding-bottom: 50px;
 }
 
-.my-education ul> li{
+.my-education ul> li {
     margin-bottom: 20px;
 }
 .my-education ul {
@@ -234,14 +229,14 @@ a{
     border-radius: 2px;
 }
 /*block contact*/
-.my-contact-grid{
+.my-contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     justify-items: stretch;
     align-items: stretch;
 }
-.input_head{
+.input_head {
     max-width: 600px;
     width: 100%;
     height: 35px;
@@ -249,8 +244,7 @@ a{
     box-sizing: border-box;
     border-radius: 5px;
     margin-bottom: 20px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 0 32px;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -264,17 +258,14 @@ a{
     border: 1px solid #cbc6c3;
     box-sizing: border-box;
     border-radius: 5px;
+    padding: 10px 32px ;
     margin-bottom: 20px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     font-size: 13px;
     line-height: 42px;
     color: #6A767D;
     -webkit-appearance: none;
 }
-.button{
+.button {
     font-size: 14px;
     box-shadow: none;
     border: none;
@@ -286,6 +277,6 @@ footer {
     padding: 20px 0 20px;
     background-color: #ffffff;
 }
-.copyright p{
+.copyright p {
     text-align: center;
 }
